@@ -1,0 +1,43 @@
+[Adblock Plus 2.0]
+! Titel: Blockiere alle lokalen IPv4-Adressen (außer 127.0.0.1)
+! Beschreibung: Diese Liste blockiert Zugriffe auf private, link-local und loopback Adressen.
+! Ausgenommen ist allein 127.0.0.1. Alle Ports (HTTP, HTTPS, etc.) sind betroffen.
+! Geeignet für Adblock Plus, uBlock Origin und ähnliche Blocker.
+
+! Ausnahme: 127.0.0.1 bleibt erlaubt
+@@||127.0.0.1^
+
+! Loopback-Adressen (127.0.0.0/8) ohne 127.0.0.1
+||127.0.0.2^
+||127.0.0.3^
+||127.*.*.*^
+
+! Privater Bereich 10.0.0.0/8
+||10.*.*.*^
+
+! Privater Bereich 172.16.0.0/12 (172.16.0.0 – 172.31.255.255)
+||172.16.*.*^
+||172.17.*.*^
+||172.18.*.*^
+||172.19.*.*^
+||172.20.*.*^
+||172.21.*.*^
+||172.22.*.*^
+||172.23.*.*^
+||172.24.*.*^
+||172.25.*.*^
+||172.26.*.*^
+||172.27.*.*^
+||172.28.*.*^
+||172.29.*.*^
+||172.30.*.*^
+||172.31.*.*^
+
+! Privater Bereich 192.168.0.0/16
+||192.168.*.*^
+
+! Link-Local (APIPA) 169.254.0.0/16
+||169.254.*.*^
+
+! Die Null-Adresse
+||0.0.0.0^
