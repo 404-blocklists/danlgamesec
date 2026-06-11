@@ -1,0 +1,10 @@
+{
+  "blacklist_urls": [
+    "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
+    "https://raw.githubusercontent.com/blocklistproject/Lists/master/porn.txt",
+    "https://raw.githubusercontent.com/404-blocklists/danlgamesec/main/localblock"
+  ],
+  "whitelist_urls": [
+    "https://raw.githubusercontent.com/404-blocklists/danlchildsafety-config/main/whitelist"
+  ]
+}
